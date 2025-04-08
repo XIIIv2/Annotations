@@ -41,7 +41,7 @@ public class ArrayUtils {
             firstName = "Kirill",
             lastName = "Popov"
     )
-    private static int[] mergeArray(int[] arrayA, int[] arrayB) {
+    private int[] mergeArray(int[] arrayA, int[] arrayB) {
         int[] result = new int[arrayA.length + arrayB.length];
         int i = 0;
         int positionA = 0;
