@@ -24,6 +24,8 @@ public class Main {
 
         System.out.println("--------------------------------");
 
+        System.out.println("Class: " + arrayUtils.getClass().getCanonicalName());
+        System.out.println("*********************************");
         for (Method m : arrayUtils.getClass().getDeclaredMethods()) {
             if (m.isAnnotationPresent(MethodInfo.class)) {
                 MethodInfo methodInfo = m.getAnnotation(MethodInfo.class);
